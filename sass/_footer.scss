@@ -18,6 +18,10 @@
       font-size: 14px;
       &-item{
           margin-bottom: 25px;
+          transition: color 0.3s ease-in-out;
+          :hover{
+              color: $primary-color;
+          }
       }
   }
 }
@@ -36,4 +40,5 @@
 .social-link:not(:first-child){
     margin-left: 15px;
 }
+
 

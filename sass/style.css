@@ -644,6 +644,12 @@ body {
 
 .footer-link-item {
   margin-bottom: 25px;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-link-item :hover {
+  color: #579aff;
 }
 
 .social {
