@@ -54,12 +54,13 @@
         word-break: break-word;
     }
     @media screen and (max-width: 1023px) {
+        padding-top: 80px;
         &-list{
             display: grid;
             justify-content: flex-start;
-            grid-auto-columns: 90%;
+            grid-auto-columns: 450px;
             grid-auto-flow: column;
-            grid-gap: 1.5rem;
+            grid-gap: 0 15px;
             overflow: auto;
             overflow-y: hidden;
             scroll-snap-type: x mandatory;
@@ -67,9 +68,7 @@
             -ms-touch-action: manipulation;
             touch-action: manipulation;
             -webkit-overflow-scrolling: touch;
-            scroll-padding: 1rem;
             grid-template-columns: unset;
-            
             &::-webkit-scrollbar {
               display: none;
               width: 0;
@@ -77,6 +76,9 @@
             & > *{
               scroll-snap-align: start;
             }
+        }
+        &-item{
+            width: 100%;
         }
     }
     
