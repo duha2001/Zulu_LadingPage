@@ -18,6 +18,7 @@
         text-align: center;
         line-height:1.4;
         flex-direction: column;
+        transition: all 0.2 linear;
     }
     &-item:hover{
         border-color: transparent;
@@ -52,4 +53,8 @@
         max-width: 100%;
         word-break: break-word;
     }
+    @media screen and (max-width: 1023px) {
+        
+    }
+    
 }

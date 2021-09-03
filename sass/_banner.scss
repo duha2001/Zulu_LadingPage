@@ -43,8 +43,27 @@
             font-size: 45px;
             margin-bottom: 30px;
         }
+        &-desc{
+            margin-bottom: 30px;
+        }
+        &-links{
+            .button{
+                padding: 15px 20px;
+            }
+            .button:first-child{
+                margin-right: 10px;
+            }
+        }
     }
-    
+    @media screen and (max-width: 767px) {
+        padding-top: 30px;
+        &-heading{
+            margin-bottom: 15px;
+            span{
+                display: unset;
+            }
+        }
+    }
     
 }
 
