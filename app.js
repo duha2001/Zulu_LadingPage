@@ -2,7 +2,7 @@ function handleToggleMenu(){
     const menuToggle = document.querySelector(".menu-toggle");
     const menu = document.querySelector(".header-menu");
     if(!menuToggle || !menu) return;
-    menutoggle.addEventListener("click",function(){
+    menuToggle.addEventListener("click",function(){
         menu.classList.add("is-active");
     });
     document.addEventListener("click", function(e){
