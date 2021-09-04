@@ -404,6 +404,11 @@ body {
     width: 100%;
   }
 }
+@media screen and (max-width: 479px) {
+  .work-list {
+    grid-auto-columns: 80%;
+  }
+}
 
 .intro {
   display: flex;
