@@ -37,8 +37,16 @@
     padding: 5px;
   }
 }
-.social-link:not(:first-child){
+.social-link + .social-link{
     margin-left: 15px;
 }
+@media screen and (max-width: 767px) {
+  .footer{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  auto auto;
+    grid-gap: 50px 20px;
+  }
+}
+
 
 

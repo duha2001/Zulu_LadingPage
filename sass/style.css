@@ -148,6 +148,21 @@ body {
   background-color: #ffb978;
 }
 
+@media screen and (max-width: 767px) {
+  .button {
+    padding: 10px 20px;
+  }
+
+  .block {
+    margin-bottom: 50px;
+  }
+  .block-heading {
+    font-size: 35px;
+  }
+  .block-caption {
+    margin-bottom: 20px;
+  }
+}
 .header {
   padding-top: 43px;
   display: flex;
@@ -699,6 +714,17 @@ body {
   color: #272e35;
 }
 
+@media screen and (max-width: 767px) {
+  .started {
+    margin-top: 0;
+  }
+
+  .started-comment,
+.started-smile {
+    max-width: 20%;
+    transform: none;
+  }
+}
 .footer {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -740,8 +766,16 @@ body {
   padding: 5px;
 }
 
-.social-link:not(:first-child) {
+.social-link + .social-link {
   margin-left: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 50px 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
